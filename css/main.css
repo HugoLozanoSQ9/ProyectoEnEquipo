@@ -4,6 +4,8 @@
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+
 }
 
 .enlacesContainer{
@@ -25,3 +27,17 @@ header{
 body{
 width: 100vh;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    width: 40px;
+    padding: 0;
+    position: sticky;
+    top: 0;
+  }
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
