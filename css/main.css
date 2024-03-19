@@ -135,3 +135,11 @@ button{
   }
  
 }
+
+.sidecontent{
+    width: 40%;
+    height: auto;
+    border: 1px solid red; 
+    justify-content: center;
+    align-items: center;
+  }
