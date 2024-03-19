@@ -96,6 +96,10 @@ button{
   border-top-left-radius: 20px;
 }
 
+.espacio {
+ margin-top: 10px;
+}
+
 
 
 @media screen and (max-width:760px){
@@ -135,3 +139,4 @@ button{
   }
  
 }
+
