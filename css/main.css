@@ -247,3 +247,8 @@ color: rgb(3, 79, 244);
     
   }
 }
+@media screen and (m-width :1623px){
+  .sidebar{
+    display: none;
+  }
+}
