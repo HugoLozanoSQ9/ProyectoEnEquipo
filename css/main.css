@@ -1,10 +1,11 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-nav{
+
+nav {
   display: flex;
   width: 100%;
   height: 50px;
@@ -13,7 +14,8 @@ nav{
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.438);
 }
-nav ul{
+
+nav ul {
   display: flex;
   list-style: none;
   margin: 0;
@@ -21,29 +23,32 @@ nav ul{
 
 }
 
-.navList{
+.navList {
   display: inline-block;
   display: flex;
 }
-.logo{
+
+.logo {
   cursor: pointer;
   margin-left: auto;
   margin-left: 1rem;
 }
-nav .enlacesContainer{
+
+nav .enlacesContainer {
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 0px 10px color(gray red green blue);
   gap: 50px;
 }
-.boton{
-display: flex;
-justify-content: flex-end;
-padding-left: 2px;
-padding-right: 2px;
+
+.boton {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-header{
+header {
   height: 40px;
   display: flex;
   width: 100%;
@@ -55,49 +60,58 @@ header{
   top: 0px;
 
 }
+
 @media (max-width: 800px) {
   .enlacesContainer {
     flex-direction: column;
   }
 }
-body{
+
+body {
   background-color: rgb(206, 210, 214);
 }
-.hlrcolor{
+
+.hlrcolor {
   font-size: 15px;
   color: black;
   border: 20px solid rgb(206, 210, 214);
 }
-.hlrtam{
+
+.hlrtam {
   width: 50%;
   display: inline-block;
-  color: gray;  
+  color: gray;
 }
-.mar{
+
+.mar {
   margin-left: 5%;
 }
-.hlrcircle{
+
+.hlrcircle {
   border-radius: 50%;
   margin-left: 20px;
-  
+
 }
-.hlrpad{
-margin-left: 30%;
-font-size: 10px;
-color: gray;
+
+.hlrpad {
+  margin-left: 30%;
+  font-size: 10px;
+  color: gray;
 }
-.hlrposition{
+
+.hlrposition {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-button{
+
+button {
   border-radius: 10px;
   background-color: aliceblue;
 }
 
-.hlrcontent1{
+.hlrcontent1 {
   width: 50%;
   height: auto;
   /* border: 1px solid red; */
@@ -105,7 +119,7 @@ button{
   align-items: center;
 }
 
-.hlrback{
+.hlrback {
   width: 80%;
   height: 100px;
   /* border: 1px solid rgb(44, 40, 40); */
@@ -114,141 +128,271 @@ button{
   align-items: center;
 }
 
-.hlrlist{
+.hlrlist {
   list-style: none;
   display: flex;
   /* border: 1px solid rgb(44, 40, 40); */
   width: 100%;
 
 }
-.hlrlist li{
+
+.hlrlist li {
   margin-right: 20px;
   color: black;
 }
 
-.hlrpost{
+.hlrpost {
   width: 100%;
   height: 100%;
   background-color: white;
- 
+
 }
 
-.hlrrow{
-  display: flex; 
+.hlrrow {
+  display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  
-  
+
+
 }
 
-.hlrimg{
+.hlrimg {
   width: 100%;
   height: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.sidebar{
+.sidebar {
   width: 300px;
   margin-right: 50px;
   position: absolute;
   top: 170px;
-  right:90px;
+  right: 90px;
   padding: 1%;
   text-align: left;
-  
+
 
 }
 
-.sectionaside{
+.sectionaside {
   background-color: white;
   padding: 5%;
   border-radius: 3%;
 }
 
-.containersidebar{
+.containersidebar {
   margin-top: 15px;
 }
 
-.sidebarcomment{
+.sidebarcomment {
   font-size: small;
   margin-top: 5px;
   margin-bottom: 15px;
   color: gray;
 }
 
-.sidebarsecondsec{
+.sidebarsecondsec {
   margin-top: 15px;
   padding: 1%;
   text-align: center;
   border-bottom: 1px solid gray;
 }
 
-.sidebartext{
+.sidebartext {
   font-size: small;
   margin-top: 5px;
 }
 
-a:link { 
-  text-decoration: none; 
+a:link {
+  text-decoration: none;
   color: black;
 }
 
 
 
-.secondcontainer{
+.secondcontainer {
   text-align: left;
   margin-top: 0px;
   padding: 5%
 }
 
-.secondcontainer:hover{
-background-color: white;
-text-decoration: underline;
-color: rgb(3, 79, 244);
+.secondcontainer:hover {
+  background-color: white;
+  text-decoration: underline;
+  color: rgb(3, 79, 244);
 }
 
 
 
-@media screen and (max-width:760px){
+@media screen and (max-width:760px) {
 
-  .hlrcontent1{
+  .hlrcontent1 {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
-  .hlrimg{
+
+  .hlrimg {
     border-radius: 0;
   }
-  
+
+  .left {
+    display: none !important;
+  }
+
 }
-@media screen and (min-width:768px){
-  .hlrcontent1{
-    width:70%;
+
+@media screen and (min-width:768px) {
+  .hlrcontent1 {
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
-  .hlrpost{
+
+  .hlrpost {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
+
 }
-@media screen and (min-width:1024px){
-  .hlrcontent1{
+
+@media screen and (min-width:1024px) {
+  .hlrcontent1 {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
 }
-@media screen and (max-width :1623px){
-  .sidebar{
+
+@media screen and (max-width :1623px) {
+  .sidebar {
     display: none;
   }
+}
+
+/* .left{
+  display: block;
+  position: relative;
+  width: 20%;
+  padding: 5%;
+  top: -1px;
+  background-color: red;
+} */
+
+.left {
+  width: 300px;
+  margin-left: 50px;
+  position: absolute;
+  top: 170px;
+  left: 90px;
+  padding: 1%;
+  text-align: left;
+}
+
+.content {
+  list-style: none;
+}
+
+ul.content li {
+  margin-bottom: 20px;
+}
+
+.other {
+  width: 300px;
+  margin-left: 50px;
+  position: absolute;
+  top: 700px;
+  left: 90px;
+  padding: 1%;
+  text-align: left;
+}
+
+.section2 {
+  list-style: none;
+}
+
+ul.section2 li {
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-left: 30px;
+  position: absolute;
+  left: 100px;
+  top: 900px;
+  padding: 2%;
+  text-align: left;
+}
+
+.icon {
+  justify-content: space-evenly;
+  height: 50px;
+}
+
+
+.lomasvisto {
+  width: 350px;
+  margin-left: 30px;
+  position: absolute;
+  height: 60px;
+  left: 80px;
+  top: 1020px;
+  padding: 1%;
+  text-align: left;
+}
+
+
+.tendencia2 {
+  width: 350px;
+  margin-top: 30px;
+  margin-left: 30px;
+  position: absolute;
+  height: 400px;
+  left: 70px;
+  top: 1050px;
+  padding: 2%;
+  text-align: left;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+ul.tendencia2 li {
+  height: 50px;
+  width: 40px;
+}
+
+
+.anuncio {
+  width: 300px;
+  margin-left: 50px;
+  position: absolute;
+  top: 1500px;
+  left: 30px;
+  padding: 1%;
+  text-align: left;
+}
+
+
+.anuncio>.anuncio_container {
+  background-color: rgb(206, 210, 214);
+  height: 20px;
+}
+
+.anuncio>.anuncio_header {
+  position: absolute;
+  justify-content: space-between;
+
+}
+
+.anuncio>.anuncio_main>.img_1 {
+  margin-bottom: 100px;
+  height: 1px;
+
 }
