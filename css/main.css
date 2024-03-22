@@ -4,8 +4,7 @@
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-nav {
+nav{
   display: flex;
   width: 100%;
   height: 50px;
@@ -14,41 +13,66 @@ nav {
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.438);
 }
-
-nav ul {
+nav ul{
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 
 }
-
-.navList {
+.navList{
   display: inline-block;
   display: flex;
 }
-
-.logo {
+.logo{
   cursor: pointer;
   margin-left: auto;
   margin-left: 1rem;
+  margin-right: 1rem;
 }
-
-nav .enlacesContainer {
+nav .enlacesContainer{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 0px 10px color(gray red green blue);
-  gap: 50px;
+
 }
 
-.boton {
+.searchBar{
+  background-color: hsl(252, 30%, 95%);
+  border-radius: 2rem;
+  padding: 0.6 rem 1 rem   
+}
+.searchBar input{
+  background: transparent;
+  width: 30vw;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: hsl(252, 30%, 17%);
+}
+nav .boton{
   display: flex;
-  justify-content: flex-end;
-  padding-left: 2px;
-  padding-right: 2px;
+  align-items: center;
+  gap: 2rem;
+
 }
 
-header {
+.btn{
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(73, 4, 73, 0.747);
+  transition: all 300ms ease;
+
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+header{
   height: 40px;
   display: flex;
   width: 100%;
@@ -58,7 +82,6 @@ header {
   padding: 30px 10%;
   position: sticky;
   top: 0px;
-
 }
 
 @media (max-width: 800px) {
@@ -243,6 +266,13 @@ a:link {
     display: none !important;
   }
 
+  .searchBar{
+    display: none;
+  }
+  nav .boton{
+    display: none;
+  
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -258,7 +288,13 @@ a:link {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
-
+  .searchBar{
+    display: none;
+  }
+  nav .boton{
+    display: none;
+  
+  }
 }
 
 @media screen and (min-width:1024px) {
@@ -269,11 +305,25 @@ a:link {
     align-items: center;
 
   }
+  .searchBar{
+    display: block;
+  }
+  nav .boton{
+    display: block;
+  
+  }
 }
 
 @media screen and (max-width :1623px) {
   .sidebar {
     display: none;
+  }
+  .searchBar{
+    display: block;
+  }
+  nav .boton{
+    display: block;
+  
   }
 }
 
